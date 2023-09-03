@@ -1,0 +1,94 @@
+.header
+  background: #F3F3F4
+  position: relative
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  &__adress
+    color: var(--text-header)
+    font-size: 16px
+    font-weight: 400
+    display: flex
+    align-items: center
+  &__location
+    padding-right: 5px
+  &__menu
+    ul
+      display: flex
+      width: 406px
+      justify-content: space-between
+      align-items: center
+      padding: 0
+      margin: 10px 0
+      li
+        a
+          color: #8B8B8B
+          font-size: 16px
+          font-weight: 400
+          &:hover
+            color: #353535
+  &__rightBox
+    display: flex
+    align-items: center
+    width: 320px
+    justify-content: space-between
+  &__openTime
+    color: #8B8B8B
+    font-size: 16px
+    font-weight: 400
+    cursor: pointer
+    border-bottom: 2px dotted
+  &__calculator
+    background: #FFD600
+    padding: 10px 16px
+    cursor: pointer
+    &:hover
+      background: #FFC700
+    a
+      display: flex
+      color: #353535
+      img
+        padding-right: 12px
+        padding-top: 2px
+  &__chart
+    display: none
+    position: absolute
+    background: #fff
+    border-radius: 16px
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08)
+    padding: 16px
+    top: 40px
+    right: 330px
+    z-index: 3
+
+  &__days
+    color: #353535
+    font-size: 16px
+    font-weight: 500
+    line-height: 24px
+    float: right
+    span
+      font-weight: 400
+  &__links
+    display: none
+    background: #fff
+    border-radius: 16px
+    width: 265px
+    position: absolute
+    top: 51px
+    right: 130px
+    z-index: 4
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.08)
+    ul
+      margin: 0
+      padding: 0
+      li
+        font-size: 16px
+        font-weight: 400
+        padding: 12px 16px
+        text-align: right
+        a
+          color: #353535
+          &:hover
+            color: #F12525
+

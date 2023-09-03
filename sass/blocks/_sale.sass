@@ -1,0 +1,80 @@
+.sale
+  background: url('../img/sale.png')
+  padding: 20px 0
+  position: relative
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__info
+    display: flex
+    align-items: center
+  &__hot
+    width: 42px
+    height: 42px
+    background: #fff
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    margin-right: 16px
+  &__title
+    font-size: 24px
+    font-weight: 400
+    color: #fff
+    span
+      color: #F12525
+      background: #fff
+      padding: 5px 10px
+      border-radius: 16px
+  &__count
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 254px
+    padding: 6px 12px
+    background: #fff
+    border-radius: 12px
+  &__text
+    font-size: 16px
+    font-weight: 400
+    color: #8B8B8B
+  &__timer
+    display: flex
+
+  &__percent
+    position: absolute
+    width: 122px
+    height: 122px
+    transform: rotate(14.795deg)
+    filter: blur(3.5px)
+    top: 30px
+    left: 567px
+    &_center
+      width: 107px
+      height: 109px
+      position: absolute
+      top: 0
+      left: 740px
+      &_mobile
+        display: none
+    &_left
+      width: 67px
+      height: 68px
+      transform: rotate(-26.928deg)
+      filter: blur(2px)
+      position: absolute
+      top: 44px
+      right: 480px
+    &_mobile
+      display: none
+    &_right
+      display: none
+.timer
+  display: flex
+  &__block
+    color: #353535
+    font-size: 16px
+    font-weight: 400
+    span
+

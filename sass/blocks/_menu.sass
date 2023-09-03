@@ -1,0 +1,125 @@
+.menu
+  padding: 6px 0
+  &__hamburger
+      padding-left: 20px
+      display: none
+      span
+        display: block
+        width: 24px
+        height: 3px
+        background: #353535
+        margin-bottom: 5px
+        border-radius: 10px
+        transition:.5s all
+      &_active
+        span
+          &:nth-child(1)
+            transform: rotate(-45deg) !important
+            margin-bottom: -2px
+          &:nth-child(2)
+            display: none
+          &:nth-child(3)
+            transform: rotate(45deg) !important
+               
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__products
+  &__ul
+    position: relative
+    display: flex
+    width: 640px
+    justify-content: space-between
+    align-items: center
+    padding: 0
+    li
+      position: relative
+      display: flex
+      align-items: center
+      a
+        display: flex
+        align-items: center
+        color: #353535
+        &:hover
+          color: #F12525
+          svg
+            transform: rotate(180deg)
+            path
+              fill: #F12525
+    ul
+      display: none
+      position: absolute
+      top: 20px
+      left: 0
+      width: 263px
+      background: #fff
+      z-index: 1
+      border-radius: 16px
+      padding: 0
+      li
+        padding: 10px 16px
+    &_two
+      display: none
+      position: absolute
+      top: 0
+      left: 0
+  &__li
+    &:hover
+      .menu__ul_one
+        display: block
+    &_secondary
+      &:hover
+        ul
+          display: block
+          position: absolute
+          top: 0
+          left: 264px
+        
+  
+
+
+  &__contacts
+    display: flex
+    align-items: center
+  &__messages
+    display: flex
+    justify-content: space-between
+    width: 64px
+    align-items: center
+    margin-right: 24px
+  &__messages
+    &_mobile
+      display: none
+  &__messager
+    &_circle
+      background: #0DC143
+      width: 28px
+      height: 28px
+      border-radius: 50%
+      a
+        width: 28px
+        height: 28px
+        display: flex
+        justify-content: center
+        align-items: center
+  &__phone
+    a
+      color: #353535
+      font-size: 24px
+      font-weight: 400
+  &__link
+    a
+      color: #F12525
+      font-size: 16px
+      font-weight: 400
+      float: right
+      display: block
+      border-bottom: 2px dotted
+
+
+
+
+
+
+
